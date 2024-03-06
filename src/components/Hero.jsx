@@ -58,6 +58,16 @@ const Hero = () => {
                 className='w-4 h-4'
               />
             </div>
+            <a href='mailto:shrijitchowdhuryofficial@gmail.com
+            ' target='_blank'>
+              <div className='w-8 h-8 rounded-full bg-[#915EFF] flex justify-center items-center'>
+                <img
+                  src='/icons/email.svg'
+                  alt='email'
+                  className='w-4 h-4'
+                />
+              </div>
+              </a>
           </div>
           </div>
          
