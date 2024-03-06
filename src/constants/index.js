@@ -253,7 +253,7 @@ const reels = [
     name: "Ankur Warikoo",
     description:
       "Video Bottt is a video editing platform that allows users to create videos using a variety of templates and share them on social media.",
-    url: "/Videos/VISHNU JI AND NARAD MUNI.mp4",
+    url: "/public/Videos/VISHNU JI AND NARAD MUNI.mp4",
     image: "/reelimg/image.png",
     reel: true,
     source_code_link: "https://github.com/",
