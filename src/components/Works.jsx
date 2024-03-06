@@ -64,7 +64,7 @@ const ProjectCard = ({
 
         </button>
         {video ? <ReactPlayer url={url} controls={true} width="100vh" height="90vh"
-          /> : reel ? <video src={url} controls={true} width="35%" height="40%" /> : null}     
+          /> : reel ? <video src={url} controls={true} width="100%" height="100%" /> : null}     
               </div>    
             </MuiModal>
     </>
