@@ -231,7 +231,7 @@ const videos = [
     name: "Podcast Intro 2",
     image: "/images/image copy 7.png",
     video : true,
-    url: "/Videos/pod test 1.mp4",
+    url: "https://drive.google.com/drive/u/0/folders/1xaxO_JpXa1A01MKoZeZIEsoSgThA0jYa",
   },
   {
     name: "Product Showcase",
@@ -239,7 +239,7 @@ const videos = [
       "Video Bottt is a video editing platform that allows users to create videos using a variety of templates and share them on social media.",
     image: "/images/image copy 6.png",
     video: true,
-    url: "/Videos/nitro 1.mp4",
+    url: "https://drive.google.com/file/d/1zsqI2cswpxYrwg2IwySlIi5Hp0mnZ81w/view",
     source_code_link: "",
   },
 ];
@@ -249,7 +249,7 @@ const reels = [
     name: "Ankur Warikoo",
     description:
       "Video Bottt is a video editing platform that allows users to create videos using a variety of templates and share them on social media.",
-    url: "/public/Videos/VISHNU JI AND NARAD MUNI.mp4",
+    url: "https://drive.google.com/file/d/127Sq0Ox2-8DnRxXpSmdT4zol9QPAoXLm/view",
     image: "/reelimg/image.png",
     reel: true,
     source_code_link: "https://github.com/",
@@ -260,7 +260,7 @@ const reels = [
       "Video Bottt is a video editing platform that allows users to create videos using a variety of templates and share them on social media.",
     image: "/reelimg/image copy.png",
     reel: true,
-    url: "/Videos/ali abdaal.mp4",
+    url: "https://drive.google.com/file/d/1EC2mTne0YIj8IJH7Y4LZVso7RLv2lzrI/view",
     source_code_link: "https://github.com/",
   },
 
@@ -270,27 +270,27 @@ const reels = [
       "Video Bottt is a video editing platform that allows users to create videos using a variety of templates and share them on social media.",
     image: "/reelimg/image copy 2.png",
     reel: true,
-    url: "/Videos/aevy.mp4",
+    url: "https://drive.google.com/file/d/1OYS7Jq45_oQrFsKgaa1WyVpotRB6HL7j/view",
     source_code_link: "https://github.com/",
   },
   {
     name: "Podcast Intro 1",
     image: "/reelimg/image copy 3.png",
     reel: true,
-    url: "/Videos/pod reel test.mp4",
+    url: "https://drive.google.com/drive/u/0/folders/1xaxO_JpXa1A01MKoZeZIEsoSgThA0jYa",
   },
   {
     name: "AI Reels",
     image: "/reelimg/image copy 4.png",
     reel: true,
     video : false,
-    url: "/Videos/ai reel.mp4",
+    url: "https://drive.google.com/file/d/1zsqI2cswpxYrwg2IwySlIi5Hp0mnZ81w/view",
   },
   {
     name: "Nikhilesh Video",
     image: "/reelimg/image copy 5.png",
     reel: true,
-    url: "/Videos/nik.mp4"
+    url: "https://www.instagram.com/p/C0_YgXGosBH/"
   }
 ]
 
