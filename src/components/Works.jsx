@@ -29,16 +29,18 @@ const ProjectCard = ({
     <>
 
       <div className= {`flex flex-wrap flex-row  sm:w-[300px] h-[230px] hover:cursor-pointer justify-center items-center `}>
-        <div className='relative w-full h-full flex-auto '
-        onClick={()=>setShowModal(true)}>
+        <div className='relative w-full h-full flex-auto '>
+        
+          <a href={url} target='_blank' rel='noreferrer'>
             <img
               src={image}
               alt='project_image'
               className='w-[85%] h-full object-contain transform hover:scale-110 transition duration-500 cubic-bezier(0.250, 0.450, 0.450, 0.950) overflow-hidden '
             />
+          </a>
           </div>
       </div>
-      <MuiModal 
+      {/* <MuiModal 
            open={showModal}
             onClose={handleClose}
             className="flex items-center justify-center align-middle
@@ -66,7 +68,7 @@ const ProjectCard = ({
         {video ? <ReactPlayer url={url} controls={true} width="100vh" height="90vh"
           /> : reel ? <video src={url} controls={true} width="100%" height="100%" /> : null}     
               </div>    
-            </MuiModal>
+      </MuiModal> */}
     </>
 
   );
