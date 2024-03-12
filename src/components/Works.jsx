@@ -114,7 +114,7 @@ const Works = () => {
       </div>
 
       
-        <div className='mt-20 flex mx-4 sm:ml-0 flex-wrap gap-3 justify-center'>
+        <div className='mt-20 flex ml-[3rem] mr-4 sm:ml-0 flex-wrap gap-3 justify-center'>
           { displaySection === "videos" ? videos.map((video, index) => (
             <ProjectCard key={`video-${index}`} index={index} {...video} />
             

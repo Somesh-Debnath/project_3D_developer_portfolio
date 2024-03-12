@@ -13,7 +13,7 @@ const Hero = () => {
     <section className={`relative w-full h-screen sm:mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  
-        max-w-7xl mx-12 m:mx-32 ${styles.paddingX} flex flex-row items-start gap-5`}
+        max-w-7xl mx-3 m:mx-32 ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col  items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -26,51 +26,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I edit videos, create content
-          </p>
-          <div className="flex gap-3">
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Connect me on  
-          </p>
-          <div className='flex gap-3 mt-3'>
-            <a href='https://www.instagram.com/shrijitchowdhury/' target='_blank'>
-              <div className='w-8 h-8 rounded-full bg-[#915EFF] flex justify-center items-center'>
-                <img
-                  src='/icons/instagram.svg'
-                  alt='instagram'
-                  className='w-4 h-4'
-                />
-              </div>
-            </a>
-            <a href='https://www.youtube.com/@cinemorphproductions' target='_blank'>
-              <div className='w-8 h-8 rounded-full bg-[#915EFF] flex justify-center items-center'>
-                <img
-                  src='/icons/youtube.svg'
-                  alt='youtube'
-                  className='w-4 h-4'
-                />
-              </div>
-            </a>
-            <div className='w-8 h-8 rounded-full bg-[#915EFF] flex justify-center items-center cursor-pointer'
-            onClick={handleClick}>
-              <img
-                src='/icons/phone.svg'
-                alt='call'
-                className='w-4 h-4'
-              />
-            </div>
-            <a href='mailto:shrijitchowdhuryofficial@gmail.com
-            ' target='_blank'>
-              <div className='w-8 h-8 rounded-full bg-[#915EFF] flex justify-center items-center'>
-                <img
-                  src='/icons/email.svg'
-                  alt='email'
-                  className='w-4 h-4'
-                />
-              </div>
-              </a>
-          </div>
-          </div>
-         
+          </p>         
         </div>
       </div>
 
