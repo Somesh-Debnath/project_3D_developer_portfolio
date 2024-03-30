@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import MuiModal from '@mui/material/Modal'
+import MuiModal from "@mui/material/Modal";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -18,27 +18,26 @@ const ProjectCard = ({
   url,
   source_code_link,
   video,
-  reel
+  reel,
 }) => {
-
   const [showModal, setShowModal] = React.useState(false);
   const handleClose = () => setShowModal(false);
-  console.log("video", video)
-  console.log("reel", reel)
+  console.log("video", video);
+  console.log("reel", reel);
   return (
     <>
-
-      <div className= {`flex flex-wrap flex-row  sm:w-[300px] h-[230px] hover:cursor-pointer justify-center items-center `}>
-        <div className='relative w-full h-full flex-auto '>
-        
-          <a href={url} target='_blank' rel='noreferrer'>
+      <div
+        className={`flex flex-wrap flex-row  sm:w-[300px] h-[230px] hover:cursor-pointer justify-center items-center `}
+      >
+        <div className="relative w-full h-full flex-auto ">
+          <a href={url} target="_blank" rel="noreferrer">
             <img
               src={image}
-              alt='project_image'
-              className='w-[85%] h-full object-contain transform hover:scale-110 transition duration-500 cubic-bezier(0.250, 0.450, 0.450, 0.950) overflow-hidden '
+              alt="project_image"
+              className="w-[85%] h-full object-contain transform hover:scale-110 transition duration-500 cubic-bezier(0.250, 0.450, 0.450, 0.950) overflow-hidden "
             />
           </a>
-          </div>
+        </div>
       </div>
       {/* <MuiModal 
            open={showModal}
@@ -70,18 +69,13 @@ const ProjectCard = ({
               </div>    
       </MuiModal> */}
     </>
-
   );
 };
 
 const Works = () => {
+  const [displaySection, setDisplaySection] = React.useState("reels");
 
-  const [displaySection, setDisplaySection] = React.useState("videos");
-
-    useEffect(() => {
-
-      
-    }, [displaySection]);
+  useEffect(() => {}, [displaySection]);
 
   const navigate = useNavigate();
   return (
@@ -91,38 +85,44 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
-          real-world examples of my work. 
+          real-world examples of my work.
         </motion.p>
       </div>
 
       <div className="flex gap-7 items-center justify-center mt-8 ">
-        <button className= {` ${ displaySection === "videos" ? "text-white" : "text-secondary" } bg-[#050816] hover:text-[#ffffff] font-bold text-[18px] rounded-[20px] mr-4 mb-[-5]`}
-        onClick={()=>setDisplaySection("videos")}>
-          Videos 
-        </button>
-        <button className= {` ${ displaySection === "reels" ? "text-white" : "text-secondary" } bg-[#050816] hover:text-[#ffffff] font-bold text-[18px] rounded-[20px] mr-4 mb-[-5]`}
-        onClick={()=>setDisplaySection("reels")}>
+        <button
+          className={` ${
+            displaySection === "reels" ? "text-white" : "text-secondary"
+          } bg-[#050816] hover:text-[#ffffff] font-bold text-[18px] rounded-[20px] mr-4 mb-[-5]`}
+          onClick={() => setDisplaySection("reels")}
+        >
           Reels
         </button>
-
+        <button
+          className={` ${
+            displaySection === "videos" ? "text-white" : "text-secondary"
+          } bg-[#050816] hover:text-[#ffffff] font-bold text-[18px] rounded-[20px] mr-4 mb-[-5]`}
+          onClick={() => setDisplaySection("videos")}
+        >
+          Videos
+        </button>
       </div>
 
-      
-        <div className='mt-20 flex ml-[3rem] mr-4 sm:ml-0 flex-wrap gap-3 justify-center'>
-          { displaySection === "videos" ? videos.map((video, index) => (
-            <ProjectCard key={`video-${index}`} index={index} {...video} />
-            
-          )) : reels.map((reel, index) => (
-            <ProjectCard key={`reel-${index}`} index={index} {...reel} />
-          ))}
-        </div>
-         
+      <div className="mt-20 flex ml-[3rem] mr-4 sm:ml-0 flex-wrap gap-3 justify-center">
+        {displaySection === "videos"
+          ? videos.map((video, index) => (
+              <ProjectCard key={`video-${index}`} index={index} {...video} />
+            ))
+          : reels.map((reel, index) => (
+              <ProjectCard key={`reel-${index}`} index={index} {...reel} />
+            ))}
+      </div>
     </>
   );
 };
